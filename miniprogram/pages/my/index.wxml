@@ -1,0 +1,44 @@
+<image src='/images/bg.png' mode='widthFix' class='bg-img-new'></image>
+<view class="user-info">
+  <image src="/images/logo.svg" class="logo" mode="widthFix"></image>
+  <view class="app-name">One-Wallhaven</view>
+  <text>版本：{{version}}</text>
+  <text>最近更新：{{updateDateTime}}</text>
+</view>
+<view class="user-nav one-card">
+  <view class="user-nav-item" data-type="favorites" bindtap="handleNav">
+    <text class="item-number" style="color:#9a65af">{{favorites}}</text>
+    <text class="item-title icon-shoucang">
+      <text>Favorites</text>
+    </text>
+  </view>
+  <view class="user-nav-item" data-type="historys" bindtap="handleNav">
+    <text class="item-number" style="color:#87a870">{{historys}}</text>
+    <text class="item-title icon-zuji">
+      <text>Historys</text>
+    </text>
+  </view>
+</view>
+<view class="one-list sm-border card-menu">
+  <view class="one-item arrow" data-link="https://github.com/MaLuns/wallhaven-mini" bindtap="handleCopyText">
+    <view class='content'>
+      <text class='icon-github'></text>
+      <text class='text-grey'>Github</text>
+    </view>
+  </view>
+  <view class="one-item arrow" bindtap="handleTipMoney">
+    <view class='content'>
+      <text class='icon-dashang-01'></text>
+      <text class='text-grey'>打赏</text>
+    </view>
+  </view>
+  <view class="one-item arrow">
+    <view class='content'>
+      <button type="default" class="btns" open-type="feedback">
+        <text class='icon-fankui'></text>
+        <text class='text-grey'>反馈</text>
+      </button>
+    </view>
+  </view>
+</view>
+<view class="copyright">Copyright © 2022 One-Wallhaven</view>

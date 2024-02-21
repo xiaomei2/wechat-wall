@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/index/index",
+    "pages/categorie/index",
+    "pages/view/index",
+    "pages/my/index",
+    "pages/my/list/index"
+  ],
+  "usingComponents": {
+    "ow-custom-navigation": "/components/ow-custom-navigation/index",
+    "ow-toast": "/components/ow-toast/index",
+    "ow-loading": "/components/ow-loading/index"
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "backgroundColor": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "home"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/categorie/index",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "text": "我的"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "One Wallhaven",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#000",
+    "backgroundColorBottom": "#000",
+    "backgroundColorTop": "#000"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

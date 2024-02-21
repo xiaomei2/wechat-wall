@@ -1,0 +1,17 @@
+<ow-custom-navigation title="One Wallhaven" blur="true" color="#fff" backgroundColor="#ffffff00"></ow-custom-navigation>
+
+<block wx:for="{{list}}" wx:key="type">
+  <ow-title title="{{item.title}}"></ow-title>
+  <ow-image-list-h bindlong="handleFavorites" bindclick="handlePreview" data-type="{{item.type}}" id="{{item.type}}" height="{{350}}"></ow-image-list-h>
+</block>
+
+<ow-title title="查看榜"></ow-title>
+<ow-image-list id="image-list" bindlong="handleFavorites" bindclick="handlePreview"></ow-image-list>
+<ow-loading wx:if="{{loading}}"></ow-loading>
+
+<!-- 预览 -->
+<include src="../../lib/mixins/preview/index.wxml" />
+<!-- <ow-preview-page model:show="{{previewShow}}">
+  <ow-image-preview model:show="{{previewShow}}" list="{{previewList}}" index="{{previewIndex}}"></ow-image-preview>
+</ow-preview-page> -->
+<ow-toast id="toast" />
