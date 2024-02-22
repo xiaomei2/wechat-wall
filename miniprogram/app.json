@@ -5,7 +5,9 @@
     "pages/categorie/index",
     "pages/view/index",
     "pages/my/index",
-    "pages/my/list/index"
+    "pages/my/list/index",
+    "pages/home/ocr/ocr",
+    "pages/parcel/index"
   ],
   "usingComponents": {
     "ow-custom-navigation": "/components/ow-custom-navigation/index",
