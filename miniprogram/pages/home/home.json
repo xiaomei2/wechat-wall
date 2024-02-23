@@ -1,5 +1,7 @@
 {
   "navigationBarTitleText": "uniapp",
   "navigationStyle": "custom",
-  "usingComponents": {}
+  "usingComponents": {
+   
+  }
 }

@@ -7,7 +7,7 @@
     "pages/my/index",
     "pages/my/list/index",
     "pages/home/ocr/ocr",
-    "pages/parcel/index"
+    "pages/home/parcel/index"
   ],
   "usingComponents": {
     "ow-custom-navigation": "/components/ow-custom-navigation/index",

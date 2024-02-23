@@ -1,11 +1,11 @@
 export const tabbars: Array<NavItem> = [
   {
-    "icon":"icon-laptop",
+    "icon":"icon-shouye",
     "pagePath": "/pages/home/home",
     "text": "home"
   },
   {
-    "icon": "icon-yingyong",
+    "icon": "icon-home",
     "pagePath": "/pages/index/index",
     "text": "首页"
   },
