@@ -40,7 +40,7 @@ view[hidden] {
   display: none !important;
 }
 page {
-  background-color: #000;
+  background-color: #ffffff;
   height: 100%;
   font-size: 26rpx;
   color: #343434;

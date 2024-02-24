@@ -1,7 +1,64 @@
 <ow-custom-navigation bindclose="handleBack" showBack="{{true}}" title="包裹信息" blur="true" color="#fff" backgroundColor="#0000002b"></ow-custom-navigation>
-<van-tabs animated>
-  <van-tab title="未领取">内容 1</van-tab>
-  <van-tab title="已领取">内容 2</van-tab>
+<view class="user-info"  style="width: 750rpx; height: 283rpx; display: flex; box-sizing: border-box; left: 0rpx; top: 0rpx;margin-bottom: 30rpx;">
+  <image src="/images/logo.svg" class="logo" mode="widthFix"></image>
+  <view class="app-name">恰个三山欢迎您</view>
+</view>
+
+<view class="user-nav one-card" style="width: 693rpx; height: 790rpx; display: flex; box-sizing: border-box">
+<van-tabs  class="van-tabs-van" active="{{ active }}" bind:change="onChange"   style="width: 693rpx; height: 794rpx; display: block; box-sizing: border-box">
+  <van-tab  title="未取件">
+
+  
+  <view class="su-table-box"  style="width: 691rpx; height: 712rpx; display: block; box-sizing: border-box">
+  <view class="su-table">
+    <!-- 表格标题 -->
+    <view class="su-tr">
+      <view class="su-th" wx:for="{{list.th}}" wx:key="index">{{item}}</view>
+    </view>
+    <!-- 表格内容 -->
+    <block wx:for="{{list.td}}" wx:key="index">
+  <view wx:if="{{item[4] === '0'}}" class="su-tr">
+    <block wx:for="{{item}}" wx:key="index_">
+      <view class="su-td">{{item}}</view>
+    </block>
+  </view>
+</block>
+  </view>
+ </view> 
+
+
+
+
+
+
+
+
+
+
+  </van-tab>
+  <van-tab title="已取件">
+  
+    <view class="su-table-box">
+  <view class="su-table">
+    <!-- 表格标题 -->
+    <view class="su-tr">
+      <view class="su-th" wx:for="{{list.th}}" wx:key="index">{{item}}</view>
+    </view>
+    <!-- 表格内容 -->
+    <block wx:for="{{list.td}}" wx:key="index">
+  <view wx:if="{{item[4] === '1'}}" class="su-tr">
+    <block wx:for="{{item}}" wx:key="index_">
+      <view class="su-td">{{item}}</view>
+    </block>
+  </view>
+</block>
+  </view>
+ </view> 
+
+  
+  
+  </van-tab>
 </van-tabs>
+</view>
 
 

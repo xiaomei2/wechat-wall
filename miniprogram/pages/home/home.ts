@@ -1,4 +1,3 @@
-const app = getApp()
 
 Page({
 data :{
@@ -10,7 +9,7 @@ handleNav(e: WechatMiniprogram.CustomEvent) {
   let path='';
   switch(type){
     case 'favorites':
-      path ='/pages/home/ocr/ocr';
+      path ='/pages/main/index';
       break;
       case 'historys':
       path ='/pages/home/parcel/index';

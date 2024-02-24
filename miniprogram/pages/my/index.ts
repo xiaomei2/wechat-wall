@@ -29,9 +29,10 @@ Page({
   },
   // 打赏码
   handleTipMoney() {
-    wx.previewImage({
-      urls: ["/images/pay.jpg"]
-    })
+    wx.showToast({
+      title: `更多内容敬请期待`,
+      icon: 'none',
+    });
   },
   // 复制
   handleCopyText(e: WechatMiniprogram.CustomEvent) {

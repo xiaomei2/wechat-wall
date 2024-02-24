@@ -34,8 +34,6 @@
     custom-class="icon-class"
     info-class="info-class"
   />
-  <view wx:else>
-    <slot name="icon" />
-  </view>
+  <slot wx:else name="icon" />
   <text class="text-class">{{ text }}</text>
 </van-button>

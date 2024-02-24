@@ -85,7 +85,7 @@ var ROOT_ELEMENT = '.van-sticky';
                 return;
             }
             (0, utils_1.getRect)(this, ROOT_ELEMENT).then(function (root) {
-                if (!(0, validator_1.isDef)(root) || (!root.width && !root.height)) {
+                if (!(0, validator_1.isDef)(root)) {
                     return;
                 }
                 if (offsetTop >= root.top) {

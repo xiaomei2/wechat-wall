@@ -1,17 +1,101 @@
-/* 修改 van-tabs 的背景颜色 */
-.van-tabs {
+
+.user-info {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  text-shadow: 0 0 20px rgba(241, 238, 238, 0.3);
+  height: 150px;
+
+  .logo {
+    width: 180px;
+    height: 180px;
+  }
+
+  .app-name {
+    color: rgb(219, 222, 236);
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .text {
+    color: rgb(168, 197, 216);
+    margin-top: 10px;
+    font-size: .8rem;
+    opacity: 0.8;
+  }
+  
+}
+/* 设置tabs为透明背景 */
+van-tabs .van-tabs__scroll {
   background-color: #444446;
+}
+/* 修改标签导航栏的字体颜色和大小 */
+.van-tabs__nav .van-tab {
+  font-size: 16px;
+  color: #ffffff;
+}
+.van-tabs-van{
+  width: 691px;
+  margin-bottom: 20px; /* 设置容器的下外边距为 20像素，与上方的容器留出一定间距 */
+}
+.one-card {
+  height: 600px;
+}
+.user-nav{
+display: flex;
+
+.su-table-box {
+  height: 400px;
+  width: 100%;
+  overflow-x: auto;
+  padding-bottom: 40rpx;
 }
 
-/* 修改 van-tabs 的字体颜色 */
-.van-tab__title {
-  color: rgb(168, 197, 216);
+.su-table {
+  margin: 0 auto;
+  display: table;
+  border-collapse: collapse;
+  overflow-x: auto;
+  word-break: keep-all;
+  white-space: nowrap;
+  background-color: #FFFFFF;
+  width: 90%;
 }
-/* 修改 van-tab 的样式 */
-.van-tab {
-  padding: 10px;
-  font-size: 14px;
-  color: #fff;
-  background-color: #444446;
-  border-top: 0px solid #ddd;
+
+.su-tr {
+  display: table-row;
+}
+
+.su-th {
+  display: table-cell;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  border: 1rpx solid #DDDDDD;
+  border-right: none;
+  border-bottom: none;
+  background-color: #87CEFA;
+  color: #FFFFFF;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.su-td {
+  padding: 0rpx 30rpx;
+  display: table-cell;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  border: 1rpx solid #DDDDDD;
+  border-right: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
 }
