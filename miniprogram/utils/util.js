@@ -24,7 +24,7 @@ function rand(Min, Max) {
 
 function doShare(title, path, that){
   return {
-    title: '我免费获得了' + title + '源码，你也快来领吧！',
+    title: '学习至上',
     success: function (res) {
       // console.log(res);
       if (res.shareTickets && res.shareTickets.length > 0){
@@ -34,7 +34,7 @@ function doShare(title, path, that){
         });
       }else{
         wx.showToast({
-          title: '分享到群获取',
+          title: '学习至上',
           icon: 'success',
           duration: 2000
         });
@@ -52,7 +52,7 @@ function getDownPath(path){
       }
     }
   }
-  return "联系微信：qicong88，发送源码";
+  return "学习至上";
 }
 
 module.exports = {
