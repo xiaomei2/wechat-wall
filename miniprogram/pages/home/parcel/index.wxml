@@ -1,6 +1,5 @@
-<ow-custom-navigation bindclose="handleBack" showBack="{{true}}" title="包裹信息" blur="true" color="#fff" backgroundColor="#0000002b"></ow-custom-navigation>
 <view class="user-info"  style="width: 750rpx; height: 283rpx; display: flex; box-sizing: border-box; left: 0rpx; top: 0rpx;margin-bottom: 30rpx;">
-  <image src="/images/logo.svg" class="logo" mode="widthFix"></image>
+  <image src="/images/logo1.svg" class="logo" mode="widthFix"></image>
   <view class="app-name">恰个三山欢迎您</view>
 </view>
 

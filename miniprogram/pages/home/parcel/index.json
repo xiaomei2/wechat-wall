@@ -7,9 +7,8 @@
     "van-tab":"/miniprogram_npm/@vant/weapp/tab/index",
     "van-tabs":"/miniprogram_npm/@vant/weapp/tabs/index"
   },
-  "navigationStyle": "custom",
-  "navigationBarTextStyle": "white",
-  "backgroundColor": "#000",
-  "backgroundColorBottom": "#000",
-  "backgroundColorTop": "#000"
+  "navigationBarTitleText": "包裹信息",
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTextStyle": "black"
+  
 }

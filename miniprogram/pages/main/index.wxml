@@ -1,28 +1,26 @@
-<ow-custom-navigation bindclose="handleBack" showBack="{{true}}" title="立夏美图" blur="true" color="#fff" backgroundColor="#0000002b"></ow-custom-navigation>
-<view class="add-tips" wx:if="{{hasShowAddTips == 0}}" bindtap="hideTips">点击「添加到我的小程序」，下次访问更便捷</view>
-<view class="container" style="width: 750rpx; height: 1472rpx; display: flex; box-sizing: border-box; left: 0rpx; top: 0rpx">
-    <navigator url="/pages/compress/index" class="item" style="position: relative; top: -140rpx">
+<view class="container" style="width: 750rpx; height: 1164rpx; display: flex; box-sizing: border-box; left: 0rpx; top: 0rpx; position: relative">
+    <navigator url="/pages/compress/index" class="item" style="position: relative; top: -193rpx; left: 0rpx">
         <view class="item-tit">照片压缩</view>
         <view class="item-con">多照片批量压缩</view>
-        <image src="../images/tpys.png" class="tpys" />
+        <image src="../image/tpys.png" class="tpys" />
     </navigator>
-    <navigator url="/pages/longimg/index" class="item" style="position: relative; top: 0rpx">
-        <view class="item-tit">长图拼接</view>
-        <view class="item-con">多张图拼接成长图</view>
-        <image src="../images/longimg.png" class="longimg" />
+    <navigator url="/pages/modifyPhoto/modify" class="item" style="position: relative; top: -53rpx; left: 2rpx">
+        <view class="item-tit">美图编辑</view>
+        <view class="item-con">美化编辑涂鸦图片</view>
+        <image src="../image/longimg.png" class="longimg" />
     </navigator>
-    <navigator url="/pages/puzzle/index" class="item" style="position: relative; top: -597rpx; left: 0rpx">
-        <view class="item-tit">拼图</view>
-        <view class="item-con">拍立得相机效果</view>
-        <image src="../images/instant.png" class="instant" />
+    <navigator url="/pages/spliceMenu/spliceMenu" class="item" style="position: relative; top: -495rpx; left: 0rpx">
+        <view class="item-tit">趣味拼图</view>
+        <view class="item-con">拼长图图框成大片</view>
+        <image src="../image/instant.png" class="instant" />
     </navigator>
-    <!--
-    <navigator url="/pages/puzzle/index" class="item">
-        <image src="../images/puzzle.png" class="puzzle" />
-        <view class="item-tit">一键拼图</view>
-        <view class="item-con">把多张图片组合在一起</view>
+
+    <navigator url="/pages/emotionChoose/emotionChoose" class="item" style="position: relative; left: 2rpx; top: -356rpx">
+        <view class="item-tit">智斗基地</view>
+        <view class="item-con">斗图小天地可自制</view>
+        <image src="../image/doutu.png" class="instant" />
     </navigator>
-    
+        <!--
     <navigator url="/pages/filter/index" class="item">
         <image src="../images/tplj.png" />
         <view class="item-tit">图片滤镜</view>
@@ -30,4 +28,4 @@
     </navigator>
     -->
 </view>
-<image src="../images/bg.jpeg" class="bg" mode="widthFix" />
+<image src="../image/bg.jpeg" class="bg" mode="widthFix" />

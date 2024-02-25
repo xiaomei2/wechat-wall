@@ -3,7 +3,7 @@
 </swiper>
 
 
-<view class="content data-v-92bb8f34" style="width: 750rpx; height: 1035rpx; display: block; box-sizing: border-box; left: 0rpx; top: 0rpx;   margin-top: -50rpx" ><view class="section-1 data-v-92bb8f34"><navigator class="item data-v-92bb8f34" open-type="navigate" url="/pages/home/ocr/ocr" hover-class="none"><image src="https://xyq-1324178530.cos.ap-guangzhou.myqcloud.com/10002.png" mode="widthFix" class="data-v-92bb8f34"></image><view class="wenyue-font data-v-92bb8f34">图片上传</view><view class="text-color-assist data-v-92bb8f34">提取取件信息</view></navigator>
+<view class="content data-v-92bb8f34" style="width: 750rpx; height: 1035rpx; display: block; box-sizing: border-box; left: 0rpx; top: 0rpx;   margin-top: -50rpx" ><view class="section-1 data-v-92bb8f34"><navigator class="item data-v-92bb8f34" bindtap="handleone" hover-class="none"><image src="https://xyq-1324178530.cos.ap-guangzhou.myqcloud.com/10002.png" mode="widthFix" class="data-v-92bb8f34"></image><view class="wenyue-font data-v-92bb8f34">图片上传</view><view class="text-color-assist data-v-92bb8f34">提取取件信息</view></navigator>
 
 
 

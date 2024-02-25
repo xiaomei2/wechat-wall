@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/home/home",
+    "pages/logs/logs",
     "pages/index/index",
     "pages/categorie/index",
     "pages/view/index",
@@ -13,7 +14,14 @@
     "pages/compress/index",
     "pages/filter/index",
     "pages/puzzle/index",
-    "pages/longimg/index"
+    "pages/longimg/index",
+    "pages/meitu/index",
+    "pages/test/index",
+    "pages/modifyPhoto/modify",
+    "pages/splicePhoto/splice",
+    "pages/spliceMenu/spliceMenu",
+    "pages/emotionChoose/emotionChoose",
+    "pages/emotionEdit/emotionEdit"
   ],
   "usingComponents": {
     "ow-custom-navigation": "/components/ow-custom-navigation/index",

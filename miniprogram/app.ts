@@ -7,6 +7,9 @@ require('./common/main.js')
 const { enableDebug } = wx.getAppBaseInfo()
 App({
   globalData: {
+    userInfo: null,
+    myDevice:null,
+    imgUrl:[],
     headerBtnPosi: <WechatMiniprogram.ClientRect>{},
     systemInfo: <WechatMiniprogram.SystemInfo>{}
   },
@@ -42,8 +45,17 @@ App({
   },
   onLaunch() {
     // 拦截 Page
-    Page = PageProxy(Page)
+    var logs = wx.getStorageSync('logs') || []
+    logs.unshift(Date.now())
+    wx.setStorageSync('logs', logs)
 
+    this.globalData.myDevice = wx.getSystemInfoSync()
+
+    for (var i = 0; i < 156; i++) {
+      this.globalData.imgUrl[i] = 'https://qcloudtest-1256525699.cos.ap-guangzhou.myqcloud.com/emotion/' + (i + 1) + '.png'
+    }
+
+    Page = PageProxy(Page)
     this.globalData.headerBtnPosi = wx.getMenuButtonBoundingClientRect()
 
     wx.getSystemInfo({
@@ -69,5 +81,6 @@ App({
         })
       }
     })
-  }
+  },
+  
 })

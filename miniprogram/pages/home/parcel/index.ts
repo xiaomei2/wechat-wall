@@ -4,10 +4,6 @@ Page({
   data: {
     active: 0,
   },
- 
-  handleBack() {
-    wx.navigateBack({})
-  },
   onChange(event) {
     wx.showToast({
       title: `切换到标签 ${event.detail.name}`,

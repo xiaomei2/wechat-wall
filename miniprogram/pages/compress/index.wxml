@@ -1,7 +1,6 @@
-<ow-custom-navigation bindclose="handleBack" showBack="{{true}}" title="照片压缩" blur="true" color="#fff" backgroundColor="#0000002b"></ow-custom-navigation>
-<view class="userinfo" bindtap="bindViewTap" wx:if="{{imgFiles.length < 1}}">
+<view class="userinfo" bindtap="bindViewTap" wx:if="{{imgFiles.length < 1}}" style="position: absolute; left: 0rpx; top: 1274rpx">
   <view class="add-btn">
-    <image src="../images/upload.png" />
+    <image src="../image/upload.png" />
     添加图片
   </view>
 </view>
