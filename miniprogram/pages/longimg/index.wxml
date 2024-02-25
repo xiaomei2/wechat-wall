@@ -1,0 +1,16 @@
+<ow-custom-navigation bindclose="handleBack" showBack="{{true}}" title="长图拼接" blur="true" color="#fff" backgroundColor="#0000002b"></ow-custom-navigation>
+<view class="container">
+  <view class="userinfo" bindtap="bindViewTap" wx:if="{{imgFiles.length < 1}}" style="position: absolute; left: 0rpx; top: 357rpx; width: 750rpx; height: 156rpx; display: flex; box-sizing: border-box">
+    <view class="add-btn" style="width: 158rpx; height: 151rpx; display: flex; box-sizing: border-box">
+    <image src="../images/upload.png" />
+    选择照片
+    </view>
+  </view>
+  <view class="preview" wx:else>
+    <view class="select-btn" bindtap="bindViewTap">重新选择</view>
+    <view class="save-btn" bindtap="getTempFilePath">保存到相册</view>
+    <view class="preview-template{{type}}">
+      <canvas canvas-id="previewCanvas" type="2d" id="previewCanvas" style="height: {{canvas_h}}px; width: {{canvas_w}}px"></canvas>
+    </view>
+  </view>
+</view>

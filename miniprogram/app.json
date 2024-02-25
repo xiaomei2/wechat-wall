@@ -9,8 +9,11 @@
     "pages/home/ocr/ocr",
     "pages/home/parcel/index",
     "pages/main/index",
-    "pages/tools/index"
-
+    "pages/tools/index",
+    "pages/compress/index",
+    "pages/filter/index",
+    "pages/puzzle/index",
+    "pages/longimg/index"
   ],
   "usingComponents": {
     "ow-custom-navigation": "/components/ow-custom-navigation/index",
@@ -50,5 +53,6 @@
     "backgroundColorBottom": "#000",
     "backgroundColorTop": "#000"
   },
+  "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

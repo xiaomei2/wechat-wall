@@ -1,14 +1,33 @@
-<ow-custom-navigation bindclose="handleBack" showBack="{{true}}" title="包裹信息" blur="true" color="#fff" backgroundColor="#0000002b"></ow-custom-navigation>
-<view class="su-table-box">
-  <view class="su-table">
-    <!-- 表格标题 -->
-    <view class="su-tr">
-      <view class="su-th" wx:for="{{list.th}}" wx:key="index">{{item}}</view>
-    </view>
-    <!-- 表格内容 -->
- 
-    <view class="su-tr" wx:for="{{list.td}}" wx:for-item="tdinfo" wx:key="index">
-      <view class="su-td" wx:for="{{tdinfo}}" wx:key="index_">{{item}}</view>
-    </view>
-  </view>
- </view> 
+<ow-custom-navigation bindclose="handleBack" showBack="{{true}}" title="立夏美图" blur="true" color="#fff" backgroundColor="#0000002b"></ow-custom-navigation>
+<view class="add-tips" wx:if="{{hasShowAddTips == 0}}" bindtap="hideTips">点击「添加到我的小程序」，下次访问更便捷</view>
+<view class="container" style="width: 750rpx; height: 1472rpx; display: flex; box-sizing: border-box; left: 0rpx; top: 0rpx">
+    <navigator url="/pages/compress/index" class="item" style="position: relative; top: -140rpx">
+        <view class="item-tit">照片压缩</view>
+        <view class="item-con">多照片批量压缩</view>
+        <image src="../images/tpys.png" class="tpys" />
+    </navigator>
+    <navigator url="/pages/longimg/index" class="item" style="position: relative; top: 0rpx">
+        <view class="item-tit">长图拼接</view>
+        <view class="item-con">多张图拼接成长图</view>
+        <image src="../images/longimg.png" class="longimg" />
+    </navigator>
+    <navigator url="/pages/puzzle/index" class="item" style="position: relative; top: -597rpx; left: 0rpx">
+        <view class="item-tit">拼图</view>
+        <view class="item-con">拍立得相机效果</view>
+        <image src="../images/instant.png" class="instant" />
+    </navigator>
+    <!--
+    <navigator url="/pages/puzzle/index" class="item">
+        <image src="../images/puzzle.png" class="puzzle" />
+        <view class="item-tit">一键拼图</view>
+        <view class="item-con">把多张图片组合在一起</view>
+    </navigator>
+    
+    <navigator url="/pages/filter/index" class="item">
+        <image src="../images/tplj.png" />
+        <view class="item-tit">图片滤镜</view>
+        <view class="item-con">我是描述</view>
+    </navigator>
+    -->
+</view>
+<image src="../images/bg.jpeg" class="bg" mode="widthFix" />

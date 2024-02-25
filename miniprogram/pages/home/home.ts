@@ -12,7 +12,10 @@ handleNav(e: WechatMiniprogram.CustomEvent) {
       path ='/pages/main/index';
       break;
       case 'historys':
-      path ='/pages/home/parcel/index';
+        wx.showToast({
+          title: `更多内容,敬请期待`,
+          icon: 'none',
+        });
   }
   wx.navigateTo({
     url: path

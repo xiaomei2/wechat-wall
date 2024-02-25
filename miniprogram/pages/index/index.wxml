@@ -1,4 +1,4 @@
-<ow-custom-navigation title="One Wallhaven" blur="true" color="#fff" backgroundColor="#ffffff00"></ow-custom-navigation>
+ffff<ow-custom-navigation title="三山 Wallhanven " blur="true" color="#fff" backgroundColor="#0000002b"></ow-custom-navigation>
 
 <block wx:for="{{list}}" wx:key="type">
   <ow-title title="{{item.title}}"></ow-title>
